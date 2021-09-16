@@ -59,26 +59,26 @@ const LoginForm = () => {
         <div>
             <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                 <Alert
-                dismissible
-                onClose={() => setShowAlert(false)}
-                show={showAlert}
-                variant="danger"
+                  dismissible
+                  onClose={() => setShowAlert(false)}
+                  show={showAlert}
+                  variant="danger"
                 >
-                Something went wrong with your login credentials!
+                  Something went wrong with your login credentials!
                 </Alert>
                 <Form.Group>
-                <Form.Label htmlFor="email">Email</Form.Label>
-                <Form.Control
-                    type="text"
-                    placeholder="Your email"
-                    name="email"
-                    onChange={handleInputChange}
-                    value={userFormData.email}
-                    required
-                />
-                <Form.Control.Feedback type="invalid">
-                    Email is required!
-                </Form.Control.Feedback>
+                  <Form.Label htmlFor="email">Email</Form.Label>
+                  <Form.Control
+                      type="text"
+                      placeholder="Your email"
+                      name="email"
+                      onChange={handleInputChange}
+                      value={userFormData.email}
+                      required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                      Email is required!
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group>
@@ -100,7 +100,7 @@ const LoginForm = () => {
                 type="submit"
                 variant="success"
                 >
-                    Submit
+                  Submit
                 </Button>
             </Form>
         </div>
